@@ -63,7 +63,7 @@ class main():
         if response:
             print(f'object {s3Key} got deleted in {bucketName} bucket')
         self.createObj(s3)
-        return True
+        return True 
 
     # def readCsvFile(self):
     #     df = spark.read.csv(inputFilePath,header=True)
