@@ -69,7 +69,7 @@ class main():
     #     df = spark.read.csv(inputFilePath,header=True)
     #     df = df.toPandas()
     #     bytes_to_write = df.to_csv(None).encode()
-    #     fs = s3fs.S3FileSystem(key=AKIA5CEOYZ43UGCANUMF, secret=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)
+    #     fs = s3fs.S3FileSystem(key=xxxxxxxxxx, secret=xxxxxxxxxxxx)
     #     with fs.open('s3://bucketName/file.csv', 'wb') as f:
     #         f.write(bytes_to_write)
 
