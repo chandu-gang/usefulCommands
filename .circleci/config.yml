@@ -1,9 +1,9 @@
-workflows:
-    version: 2
-    jobs:
-        run-tests:
-            docker:
-                - image: circleci/python:3.6.8
+
+version: 2
+jobs:
+    run-tests:
+        docker:
+            - image: circleci/python:3.6.8
         working_directory: ~/usefulCommands
         steps:
             - checkout
