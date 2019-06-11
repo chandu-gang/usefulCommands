@@ -9,3 +9,14 @@ jobs:
             - checkout
             - run: pip install --user --upgrade pip
             - run: pip install pytest
+            
+workflows:
+  version: 2
+  test-publish-image:
+    jobs:
+      - docker-image:
+          context: org-global
+          requires:
+            - run-tests
+      - run-tests:
+          context: org-global
