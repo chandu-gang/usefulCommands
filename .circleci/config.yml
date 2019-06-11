@@ -1,7 +1,8 @@
-
-version: 2
-jobs:
-    run-tests:
+workflows:
+  version: 2
+  build:
+    jobs:
+      run-tests:
         docker:
             - image: circleci/python:3.6.8
         working_directory: ~/usefulCommands
@@ -9,14 +10,6 @@ jobs:
             - checkout
             - run: pip install --user --upgrade pip
             - run: pip install pytest
+
+    
             
-workflows:
-  version: 2
-  test-publish-image:
-    jobs:
-      - docker-image:
-          context: org-global
-          requires:
-            - run-tests
-      - run-tests:
-          context: org-global
