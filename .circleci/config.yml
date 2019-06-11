@@ -1,0 +1,10 @@
+    
+version: 2
+jobs:
+  run-tests:
+    docker:
+      - image: circleci/python:3.6.8
+    steps:
+      - checkout
+	  - run: pip install --user --upgrade pip
+	  - run: pip install pytest
