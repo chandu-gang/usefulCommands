@@ -1,13 +1,11 @@
 workflows:
-    version: 2
-     jobs:
-       run-tests:
-            docker:
-                 - image: circleci/python:3.6.8
-            working_directory: ~/usefulCommands
-            steps:
-                - checkout
-                - run: pip install --user --upgrade pip
-                - run: pip install pytest
-    
-    
+ version: 2
+  jobs:
+   run-tests:
+     docker:
+       - image: circleci/python:3.6.8
+     working_directory: ~/usefulCommands
+     steps:
+       - checkout
+       - run: pip install --user --upgrade pip
+       - run: pip install pytest
