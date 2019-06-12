@@ -9,7 +9,7 @@ jobs:
         - checkout
         - run: pip install --user --upgrade pip   
         - run: pip install --user pytest
-	- run: pytest tests/*
+        - run: pytest test/*
         
 workflows:
   version: 2
