@@ -3,4 +3,4 @@ import pytest
 
 def test_add():
      r=add(2,3)
-     assert r == 6
+     assert r == 5
