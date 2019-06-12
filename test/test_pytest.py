@@ -2,7 +2,7 @@
 
 import sys
 import pytest
-from somfunc import *
+from src.somfunc import *
 
 def test_pytest():
 	result = somefunc(10,10)
